@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_bg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroup_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:id="@+id/radioButton_Only"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:text="僅只一次"
+            android:textColor="#1A68A6"
+            android:textSize="24sp"
+            app:buttonTint="@color/color_blue" />
+
+        <RadioButton
+            android:id="@+id/radioButton_everyday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:text="每天"
+            android:textColor="#1A68A6"
+            android:textSize="24sp"
+            app:buttonTint="@color/color_blue"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_workday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:text="工作日"
+            android:textColor="#1A68A6"
+            android:textSize="24sp"
+            app:buttonTint="@color/color_blue"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_weekend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:text="週末"
+            android:textColor="#1A68A6"
+            android:textSize="24sp"
+            app:buttonTint="@color/color_blue"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:text="按星期"
+            android:textColor="#1A68A6"
+            android:textSize="24sp"
+            app:buttonTint="@color/color_blue"/>
+
+    </RadioGroup>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBox_Mon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="週一"
+                android:textColor="#1A68A6"
+                android:textSize="24sp"
+                app:buttonTint="@color/color_blue" />
+
+            <CheckBox
+                android:id="@+id/checkBox_Tue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="週二"
+                android:textColor="#1A68A6"
+                android:textSize="24sp"
+                app:buttonTint="@color/color_blue" />
+
+            <CheckBox
+                android:id="@+id/checkBox_Wed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="週三"
+                android:textColor="#1A68A6"
+                android:textSize="24sp"
+                app:buttonTint="@color/color_blue" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBox_Thu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="週四"
+                android:textColor="#1A68A6"
+                android:textSize="24sp"
+                app:buttonTint="@color/color_blue" />
+
+            <CheckBox
+                android:id="@+id/checkBox_Fri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="週五"
+                android:textColor="#1A68A6"
+                android:textSize="24sp"
+                app:buttonTint="@color/color_blue" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBox_Sat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="週六"
+                android:textColor="#1A68A6"
+                android:textSize="24sp"
+                app:buttonTint="@color/color_blue" />
+
+            <CheckBox
+                android:id="@+id/checkBox_Sun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="週日"
+                android:textColor="#1A68A6"
+                android:textSize="24sp"
+                app:buttonTint="@color/color_blue" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<!--溫度-->
+    <size android:height="40dp"/>
+    <size android:width="35dp"/>
+
+    <corners android:radius="8dp"/>
+
+    <gradient
+        android:endColor="@null"
+        android:startColor="@null" />
+
+    <stroke android:width="7dp"
+        android:color="#6666"/>
+
+    />
+
+
+</shape>

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_blackstar"
+    tools:context=".ui.auto.AutoFragment">
+
+    <Switch
+        android:id="@+id/switch_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:showText="true"
+        android:switchTextAppearance="@style/switch_text"
+        android:textOff="   關 閉   "
+
+        android:textOn="   開 啟   "
+        android:textSize="18sp"
+        android:thumb="@drawable/ex2_switch_thumb"
+        android:track="@drawable/ex2_switch_track"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_auto">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="溫度 ( 冷氣機 )"
+            android:textColor="#96D8F6"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高 於"
+                android:textColor="#CFE6F8"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:id="@+id/button_c_On_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/baseline_arrow_drop_down_white_18dp" />
+
+            <EditText
+
+                android:id="@+id/editText_celsiusOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:ems="3"
+                android:inputType="numberSigned|numberDecimal"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="#CFE6F8"
+                android:textSize="20sp" />
+
+
+            <ImageButton
+                android:id="@+id/button_c_On_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/baseline_arrow_drop_up_white_18dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="  °C  開 啟"
+                android:textColor="#CFE6F8"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="低 於"
+                android:textColor="#CFE6F8"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:id="@+id/button_c_Off_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/baseline_arrow_drop_down_white_18dp" />
+
+            <EditText
+                android:id="@+id/editText_celsiusOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/edittext_bg"
+                android:ems="3"
+                android:inputType="numberSigned|numberDecimal"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="#CFE6F8"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/button_c_Off_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/baseline_arrow_drop_up_white_18dp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="  °C  關 閉"
+                android:textColor="#CFE6F8"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="濕度 ( 除濕機 )"
+            android:textColor="#96D8F6"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高 於"
+                android:textColor="#CFE6F8"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:id="@+id/button_h_On_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/baseline_arrow_drop_down_white_18dp" />
+
+            <EditText
+                android:id="@+id/editText_humidityOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:ems="3"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="#CFE6F8"
+                android:textSize="20sp" />
+
+
+            <ImageButton
+                android:id="@+id/button_h_On_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/baseline_arrow_drop_up_white_18dp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="% RH  開 啟"
+                android:textColor="#CFE6F8"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="低 於"
+                android:textColor="#CFE6F8"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:id="@+id/button_h_Off_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/baseline_arrow_drop_down_white_18dp" />
+
+            <EditText
+                android:id="@+id/editText_humidityOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:ems="3"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="#CFE6F8"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/button_h_Off_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/baseline_arrow_drop_up_white_18dp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="% RH  關 閉"
+                android:textColor="#CFE6F8"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PM2.5 ( 空氣清淨機 )"
+            android:textColor="#96D8F6"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高 於"
+                android:textColor="#CFE6F8"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:id="@+id/button_p_On_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/baseline_arrow_drop_down_white_18dp" />
+
+            <EditText
+                android:id="@+id/editText_PM2_5_On"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:ems="3"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="#CFE6F8"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/button_p_On_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/baseline_arrow_drop_up_white_18dp" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="μg/m3  開 啟"
+                android:textColor="#CFE6F8"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="低 於"
+                android:textColor="#CFE6F8"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:id="@+id/button_p_Off_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/baseline_arrow_drop_down_white_18dp" />
+
+            <EditText
+                android:id="@+id/editText_PM2_5_Off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:ems="3"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="#CFE6F8"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/button_p_Off_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/baseline_arrow_drop_up_white_18dp" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="μg/m3  關 閉"
+                android:textColor="#CFE6F8"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <Button
+            android:id="@+id/button_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:padding="3dp"
+            android:text="確認"
+            android:textColor="#87CEEB"
+            android:textSize="24sp"
+            app:backgroundTint="@android:color/transparent"
+            app:backgroundTintMode="add" />
+
+        <Button
+            android:id="@+id/button_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:padding="3dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="還原"
+            android:textColor="#87CEEB"
+            android:textSize="24sp"
+            app:backgroundTint="@android:color/transparent"
+            app:backgroundTintMode="add" /> />
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:padding="3dp"
+            android:text="清除"
+            android:textColor="#87CEEB"
+            android:textSize="24sp"
+            app:backgroundTint="@android:color/transparent"
+            app:backgroundTintMode="add" /> />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    不確定是哪個區域使用的顏色-->
+    <color name="purple_200">#003D79</color>
+
+<!--  Home裡字體的顏色&app bar&彈出的對話框function顏色  -->
+    <color name="purple_500">#74ADDA</color>
+
+<!--    狀態列的顏色-->
+    <color name="purple_700">#1A68A6</color>
+
+    <color name="teal_200">#FF96D8F6</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_blue">#FF96D8F6</color>
+<!--    <color name="color_blue">#1A68A6</color>-->
+</resources>

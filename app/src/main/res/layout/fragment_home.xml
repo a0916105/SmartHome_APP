@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_blackstar"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button_AC"
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_weight="5"
+            android:text="   冷 氣 機   "
+            android:textColor="#79A7CC"
+            android:textSize="24sp"
+            app:backgroundTint="#FEFFFF" />
+
+        <Switch
+            android:id="@+id/switch_AC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:showText="true"
+            android:switchTextAppearance="@style/switch_text"
+            android:textOff="   關 閉   "
+            android:textOn="   開 啟   "
+            android:textSize="18sp"
+            android:thumb="@drawable/ex2_switch_thumb"
+            android:track="@drawable/ex2_switch_track" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/button_DH"
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_weight="5"
+            android:text="   除 濕 機   "
+            android:textColor="#79A7CC"
+            android:textSize="24sp"
+            app:backgroundTint="@color/white" />
+
+        <Switch
+            android:id="@+id/switch_DH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:showText="true"
+            android:switchTextAppearance="@style/switch_text"
+            android:textOff="   關 閉   "
+            android:textOn="   開 啟   "
+            android:thumb="@drawable/ex2_switch_thumb"
+            android:track="@drawable/ex2_switch_track" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <Button
+            android:id="@+id/button_AP"
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_weight="5"
+            android:text="空 氣 清 淨 機"
+            android:textColor="#79A7CC"
+            android:textSize="24sp"
+            app:backgroundTint="#FEFFFF" />
+
+        <Switch
+            android:id="@+id/switch_AP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:showText="true"
+            android:switchTextAppearance="@style/switch_text"
+            android:textOff="   關 閉   "
+            android:textOn="   開 啟   "
+            android:thumb="@drawable/ex2_switch_thumb"
+            android:track="@drawable/ex2_switch_track" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
